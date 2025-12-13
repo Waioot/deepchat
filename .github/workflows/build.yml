@@ -61,7 +61,7 @@ jobs:
           pnpm run build
           pnpm exec electron-builder --win --${{ matrix.arch }} --publish=never
         env:
-          VITE_GITHUB_CLIENT_ID: 01ab8ac9400c4e429b23
+          VITE_GITHUB_CLIENT_ID: Iv1.b507a08c87ecfe98
           VITE_GITHUB_CLIENT_SECRET: ${{ secrets.DC_GITHUB_CLIENT_SECRET }}
           VITE_GITHUB_REDIRECT_URI: ${{ secrets.DC_GITHUB_REDIRECT_URI }}
           VITE_PROVIDER_DB_URL: ${{ secrets.CDN_PROVIDER_DB_URL }}
@@ -117,7 +117,7 @@ jobs:
           pnpm run build
           pnpm exec electron-builder --linux --${{ matrix.arch }} --publish=never
         env:
-          VITE_GITHUB_CLIENT_ID: 01ab8ac9400c4e429b23
+          VITE_GITHUB_CLIENT_ID: Iv1.b507a08c87ecfe98
           VITE_GITHUB_CLIENT_SECRET: ${{ secrets.DC_GITHUB_CLIENT_SECRET }}
           VITE_GITHUB_REDIRECT_URI: ${{ secrets.DC_GITHUB_REDIRECT_URI }}
           VITE_PROVIDER_DB_URL: ${{ secrets.CDN_PROVIDER_DB_URL }}
@@ -180,7 +180,7 @@ jobs:
           DEEPCHAT_APPLE_NOTARY_TEAM_ID: ${{ secrets.DEEPCHAT_APPLE_NOTARY_TEAM_ID }}
           DEEPCHAT_APPLE_NOTARY_PASSWORD: ${{ secrets.DEEPCHAT_APPLE_NOTARY_PASSWORD }}
           build_for_release: '2'
-          VITE_GITHUB_CLIENT_ID: 01ab8ac9400c4e429b23
+          VITE_GITHUB_CLIENT_ID: Iv1.b507a08c87ecfe98
           VITE_GITHUB_CLIENT_SECRET: ${{ secrets.DC_GITHUB_CLIENT_SECRET }}
           VITE_GITHUB_REDIRECT_URI: ${{ secrets.DC_GITHUB_REDIRECT_URI }}
           NODE_OPTIONS: '--max-old-space-size=4096'
