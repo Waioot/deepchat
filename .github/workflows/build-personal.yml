@@ -56,7 +56,7 @@ jobs:
         run: pnpm run installRuntime:win:${{ matrix.arch }}
 
       - name: Build Windows
-        run: pnpm run build:win:${{ matrix.arch }}
+        run: pnpm run build:win:${{ matrix.arch }} -- --publish never
         env:
           VITE_GITHUB_CLIENT_ID: Iv1.b507a08c87ecfe98
 
@@ -109,7 +109,7 @@ jobs:
         run: pnpm run installRuntime:mac:${{ matrix.arch }}
 
       - name: Build Mac (No Signing)
-        run: pnpm run build:mac:${{ matrix.arch }}
+        run: pnpm run build:mac:${{ matrix.arch }} -- --publish never
         env:
           VITE_GITHUB_CLIENT_ID: Iv1.b507a08c87ecfe98
           CSC_IDENTITY_AUTO_DISCOVERY: 'false'
